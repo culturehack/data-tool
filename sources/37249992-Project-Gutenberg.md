@@ -1,6 +1,5 @@
 ---
 title: Project Gutenberg ebooks
-short_description: Project Gutenberg offers over 42,000 free e-books, most of which are out of copyright. You can download the transcribed text of each book in a number of formats, and indexes of the collection are available in RDF format.
 publisher: Project Gutenberg
 categories: [Literature]
 size: Medium
