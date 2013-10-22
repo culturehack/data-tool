@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/culturehack/data-tool.png?branch=master)](https://travis-ci.org/culturehack/data-tool)
+
 data-tool
 =========
 
