@@ -40,8 +40,11 @@ get '/dataset/:id' do |id|
 
   if File.readable?(file)
 
-    @content = RDiscount.new(File.read(file)).to_html
+    file_content = File.read(file)
 
+    raw_content = file_content.gsub(/---(.|\n)*---/, '').strip
+    @content = RDiscount.new(raw_content).to_html
+    @metadata = YAML.load(file_content)
   else
 
     @content = "Page not found"

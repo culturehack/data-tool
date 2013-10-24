@@ -22,9 +22,28 @@
     </div>
 
     <div class="page-content">
-      <h1>Dataset #<%= @id %></h1>
+
+      <h1><%= @metadata['title'] %></h1>
 
       <%= @content %>
+
+
+      <% if @metadata['size_description'] %>
+        <h2>Size</h2>
+        <%= RDiscount.new(@metadata['size_description']).to_html %>
+      <% end %>
+
+
+      <% if @metadata['licence_description'] %>
+        <h2>Licensing</h2>
+        <%= RDiscount.new(@metadata['licence_description']).to_html %>
+      <% end %>
+
+      <% if @metadata['contact_information'] %>
+        <h2>Contact</h2>
+        <%= RDiscount.new(@metadata['contact_information']).to_html %>
+      <% end %>
+
 
     </div>
 
