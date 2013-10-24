@@ -17,7 +17,7 @@ SOURCES = [
 
 get '/' do
 
-  @categories = params[:categories].split(',')
+  @categories = params[:categories].to_s.split(',')
 
 
   if @categories.size > 0
