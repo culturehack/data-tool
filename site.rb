@@ -1,19 +1,20 @@
 require 'sinatra'
 require 'rdiscount'
+require 'yaml'
 
-SOURCES = [
-  {
-    :title => 'Project Gutenberg',
-    :categories => ['Literature'],
-    :size => 'Medium',
-    :path => '37249992-Project-Gutenberg'
-  }, {
-    :title => 'Open Library',
-    :categories => ['Literature'],
-    :size => 'Huge',
-    :path => '37251000-Open-Library' 
-  } 
-]
+SOURCES = []
+
+
+LIST = Dir.entries('sources').select {|x| x =~ /\A[\d]+/}
+
+LIST.each do |file_name|
+
+  file = File.join('sources', file_name)
+
+  SOURCES << YAML.load(File.read(file)).merge!({'path' => file_name.gsub('.md', '')})
+
+end
+
 
 get '/' do
 
@@ -22,10 +23,11 @@ get '/' do
 
   if @categories.size > 0
 
-    @sources = SOURCES.select {|source| (source[:categories] & @categories)[0] }
+    @sources = SOURCES.select {|source| (source['categories'] & @categories)[0] }
   else
     @sources = SOURCES
   end
+
 
   erb :home
 end
