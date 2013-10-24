@@ -58,3 +58,19 @@ a {
   color: #389c9a;
   text-decoration: none;
 }
+
+.filter {
+  text-align: center;
+}
+
+.filter a {
+  display: inline-block;
+  margin-right: 5px;
+  background-color: #CCC;
+  padding: 5px 10px;
+}
+
+.filter a.selected {
+  background-color: #333;
+  color: #CCC;
+}

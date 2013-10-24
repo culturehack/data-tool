@@ -23,11 +23,19 @@
 
     <div class="page-content">
       <h1>Data sources</h1>
-      
-      <p>This will become a listing of sources for cultural heritage data.</p>
+
+      <nav class="filter">
+        Filter: 
+
+        <% ['Art', 'Literature', 'Music', 'Performance', 'Fashion', 'Media', 'History'].each do |category| %>
+          <a href="./?categories=<%= category %>" class="<%= 'selected' if @categories.include?(category) %>"><%= category %></a> 
+        <% end %>
+      </nav>
 
       <ul>
-        <li><a href="/dataset/37249992-Project-Gutenberg">Project Gutenberg</a></ul>
+        <% @sources.each do |source| %>
+          <li><a href="/dataset/<%= source[:path] %>"><%= source[:title] %></a></li>
+        <% end %>
       </ul>
     </div>
 
