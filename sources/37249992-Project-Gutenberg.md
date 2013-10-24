@@ -9,7 +9,7 @@ licence_description: Most of the books are out of copyright in the USA. Other ju
 media: text
 update_frequency: Daily
 first_published_at: 1971
-contact_information: See the [http://www.gutenberg.org/wiki/Gutenberg:Contact_Information](Project Gutenberg contact information) page.
+contact_information: See the [Project Gutenberg contact information](http://www.gutenberg.org/wiki/Gutenberg:Contact_Information) page.
 score: 5
 link: http://www.gutenberg.org/
 ---
