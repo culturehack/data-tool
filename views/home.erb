@@ -28,7 +28,15 @@
         Filter: 
 
         <% ['Art', 'Literature', 'Music', 'Performance', 'Fashion', 'Media', 'History'].each do |category| %>
-          <a href="./?categories=<%= category %>" class="<%= 'selected' if @categories.include?(category) %>"><%= category %></a> 
+
+          <% if @categories.include?(category) %>
+            <% link_categories = @categories.select {|x| x != category} %>
+            <% html_class = 'selected' %>
+          <% else %>
+            <% link_categories = (@categories + [category]) %>
+          <% end %>
+
+          <a href="./?categories=<%= link_categories.sort.join(',') %>" class="<%= html_class %>"><%= category %></a> 
         <% end %>
       </nav>
 
