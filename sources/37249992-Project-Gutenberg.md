@@ -11,6 +11,7 @@ update_frequency: Daily
 first_published_at: 1971
 contact_information: See the [http://www.gutenberg.org/wiki/Gutenberg:Contact_Information](Project Gutenberg contact information) page.
 score: 5
+link: http://www.gutenberg.org/
 ---
 
 Project Gutenberg is one of the oldest open data projects on the web. Founded in 1971, it uses volunteers to transcribe out-of-copyright books and makes them available as text files to download.
