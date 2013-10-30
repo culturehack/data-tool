@@ -13,6 +13,9 @@ update_frequency: Daily
 first_published_at: 1971
 contact_information: "See the [Project Gutenberg contact information](http://www.gutenberg.org/wiki/Gutenberg:Contact_Information) page."
 score: 5
+formats:
+  - RDF
+  - RSS
 link: "http://www.gutenberg.org/"
 published: true
 ---
