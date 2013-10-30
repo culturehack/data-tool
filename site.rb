@@ -3,7 +3,6 @@ require 'rdiscount'
 require 'yaml'
 
 
-
 helpers do
 
   def truncate(text, length = 300, options = {})
@@ -27,9 +26,11 @@ LIST.each do |file_name|
 
   file_content = File.read(file)
 
-  s = YAML.load(file_content).merge!({'path' => file_name.gsub('.md', '')})
-
-  s[:content] = file_content.gsub(/---(.|\n)*---/, '').strip
+  s = YAML.load(file_content).merge!({
+    'path' => file_name.gsub('.md', ''),
+    'id' => file_name[/\A\d+/],
+    'content' => file_content.gsub(/---(.|\n)*---/, '').strip
+    })
 
   SOURCES << s
 
@@ -56,18 +57,13 @@ get '/dataset/:id' do |id|
 
   @id = id[/\A\d+/]
 
-  file = File.join('sources', id + '.md')
+  sources = SOURCES.select {|source| source['id'] == @id }
+  
+  if sources.size > 0
 
-  if File.readable?(file)
-
-    file_content = File.read(file)
-
-    raw_content = file_content.gsub(/---(.|\n)*---/, '').strip
-    @content = RDiscount.new(raw_content).to_html
-    @metadata = YAML.load(file_content)
+    @source = sources[0]
   else
 
-    @content = "Page not found"
   end
 
   erb :dataset

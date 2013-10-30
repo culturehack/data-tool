@@ -67,12 +67,8 @@
                 <header class="title">
                   <a href="/dataset/<%= source['path'] %>"><%= source['title'] %></a>
                 </header>
-
-                <%#= truncate(source[:content]) %>
-
-                <%#= truncate("XXXX") %>
-
-                <%= RDiscount.new(truncate(source[:content])).to_html %>
+                
+                <%= RDiscount.new(truncate(source['content'])).to_html %>
 
               </article>
             
