@@ -146,7 +146,7 @@ a {
 }
 
 .data-sources .title a {
-  display: block;
+  display: blockc;
 }
 
 .data-sources .title a:hover {
@@ -165,4 +165,73 @@ a {
 
 .page-footer p {
   margin: 0;
+}
+
+.meta {
+  font-size: 14px;
+}
+
+.size {
+  display: inline-block;  
+  text-align: center;
+  color: white;
+  margin-right: 10px;  
+}
+
+.size-small {
+  width: 20px; 
+  height: 20px;
+  border-radius: 10px;
+  background-color: green;
+}
+
+.size-medium {
+  width: 26px; 
+  height: 26px;
+  border-radius: 13px;
+  background-color: orange;
+  line-height: 26px;
+}
+
+.size-huge {
+  width: 32px; 
+  height: 32px;
+  border-radius: 16px;
+  background-color: red;
+  line-height: 32px;
+}
+
+.categories {
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.categories .category {
+   background-color: #CCC;
+   display: inline-block;
+   padding: 0 6px;
+}
+
+.formats {
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.formats .format {
+   background-color: #389C9A;
+   color: white;
+   display: inline-block;
+   padding: 0 6px;
+}
+
+.licences {
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.licences .licence {
+   background-color: #506666;
+   color: white;
+   display: inline-block;
+   padding: 0 6px;
 }

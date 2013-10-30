@@ -67,8 +67,38 @@
                 <header class="title">
                   <a href="/dataset/<%= source['path'] %>"><%= source['title'] %></a>
                 </header>
-                
+
                 <%= RDiscount.new(truncate(source['content'])).to_html %>
+
+
+                <div class="meta">
+
+                  <% if source['size'] %>
+                    Size <span class="size size-<%= source['size'].downcase %>"><%= size_abbreviation(source['size']) %></span>
+                  <% end %>
+
+                  <span class='categories'>
+                    <% source['categories'].each do |category| %>
+                      <span class="category"><%= category %></span>
+                    <% end %>
+                  </span>                
+
+                  <% if source['formats'] %>
+                    <span class='formats'>
+                      <% source['formats'].each do |format| %>
+                        <span class="format"><%= format %></span>
+                      <% end %>
+                    </span> 
+                  <% end %>
+
+                  <% if source['licence'] %>
+                    <span class='licences'>
+                      <span class="licence"><%= source['licence'] %></span>
+                    </span> 
+                  <% end %>
+
+                </div>
+
 
               </article>
             

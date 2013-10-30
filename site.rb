@@ -13,6 +13,18 @@ helpers do
     return truncated_text
   end
 
+  def size_abbreviation(size)
+
+    if size == 'Medium'
+      'M'
+    elsif size == 'Small'
+      'S'
+    elsif size == 'Huge'
+      'XL'
+    end
+
+  end
+
 end
 
 SOURCES = []
