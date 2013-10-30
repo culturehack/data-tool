@@ -84,14 +84,17 @@ get '/' do
 
 
   if @categories.size > 0
-
     @sources = SOURCES.select {|source| (source['categories'] & @categories)[0] }
   else
     @sources = SOURCES
   end
 
+  if @sources.size > 0
+    erb :home
+  else
+    erb :none_found
+  end
 
-  erb :home
 end
 
 get '/dataset/:id' do |id|

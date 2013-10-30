@@ -1,0 +1,80 @@
+<html>
+<head>
+  <link href="/stylesheets/styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <a href="https://github.com/culturehack/data-tool"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+
+  <div class="page">
+    <div class="page-header">
+      <a href="http://culturehack.org.uk" class="logo-link">
+        <img src="/images/culture-hack.svg" alt="Culture Hack" class="logo" height="96">
+      </a>
+
+      <nav class="primary-nav">
+        <a href="http://culturehack.org.uk">Home</a>
+        <a href="http://culturehack.org.uk/about/">About</a>
+        <a href="http://culturehack.org.uk/blog/">Blog</a>
+        <a href="http://culturehack.org.uk/prototypes/">Prototypes</a>
+        <a href="http://culturehack.org.uk/hack-events/">Hack events</a>
+        <a href="/" class="active">Data sources</a>
+        <a href="http://culturehack.org.uk/get-in-touch/">Get in touch</a>
+      </nav>
+    </div>
+
+    <div class="page-content">
+
+      <div class="listings-layout">
+
+        <div class="listings-options">
+          
+          <section class="options-block">
+            <header class="options-header">
+              Categories
+            </header>
+            <div class="options-content">
+
+              <div class="filter">
+
+                <% ['Art', 'Literature', 'Music', 'Performance', 'Fashion', 'Media', 'History'].each do |category| %>
+
+                  <% if @categories.include?(category) %>
+                    <% link_categories = @categories.select {|x| x != category} %>
+                    <% html_class = 'selected' %>
+                  <% else %>
+                    <% link_categories = (@categories + [category]) %>
+                  <% end %>
+
+                  <a href="./?categories=<%= link_categories.sort.join(',') %>" class="<%= html_class %>"><%= category %></a> 
+                <% end %>
+              </div>
+
+            </div>
+
+          </section>
+
+
+        </div>
+
+        <div class="listings-content">
+
+          <h1>Data sources</h1>
+
+          <p>Sorry, no data sources were found matching those criteria.</p>
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="page-footer">
+      <div class="footer-content">
+        <p>Website produced by Frankie Roberto and Kim Plowright for Culture Hack.</p>
+        <p>Content available under Creative Commons Public Domain dedication.</p>
+      </div>
+    </div>
+
+  </div>
+</body>
