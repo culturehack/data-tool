@@ -1,0 +1,42 @@
+prose:
+  rooturl: 'sources'
+  media: 'public'
+  metadata:
+    sources:
+      - name: "title"
+        field:
+          element: "text"
+          value: "blog"
+      - name: "publisher"
+        field:
+          element: "text"
+          value: "blog"
+      - name: "categories"
+        field:
+          element: "multiselect"
+          options:
+            - name: "Art"
+              value: "Art"
+            - name: "Literature"
+              value: "Literature"
+            - name: "Music"
+              value: "Music"
+            - name: "Performance"
+              value: "Performance"
+            - name: "Fashion"
+              value: "Fashion"
+            - name: "Media"
+              value: "Media"
+            - name: "History"
+              value: "History"
+      - name: "size"
+        field: 
+          element: "select"
+          options:
+            - name: "Small"
+              value: "Small"
+            - name: "Medium"
+              value: "Medium"
+            - name: "Huge"
+              value: "Huge"
+            
