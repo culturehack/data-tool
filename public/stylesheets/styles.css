@@ -125,10 +125,12 @@ a {
 .article-content,
 .article-aside {
   display: table-cell;
+  vertical-align: top;
 }
 
 .article-aside {
   width: 25%;
+  padding-top: 40px;
 }
 
 .article-content {
@@ -202,6 +204,8 @@ a {
   text-align: center;
   color: white;
   margin-right: 10px;  
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;  
+  text-transform: uppercase;  
 }
 
 .size-small {
@@ -229,6 +233,7 @@ a {
 
 .categories {
   text-transform: uppercase;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;    
   margin-right: 10px;
 }
 
@@ -241,6 +246,7 @@ a {
 .formats {
   text-transform: uppercase;
   margin-right: 10px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;    
 }
 
 .formats .format {
@@ -253,6 +259,7 @@ a {
 .licences {
   text-transform: uppercase;
   margin-right: 10px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;  
 }
 
 .licences .licence {
@@ -326,4 +333,27 @@ article h2 {
 
 .button-right {
   float: right;
+}
+
+.article-summary {
+  background-color: #EFEFEF;
+  padding: 10px;
+
+}
+
+.summary-section {
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #777;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.summary-section h2 {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0 0 6px 0;
+}
+
+.summary-section p {
+  margin: 0;
 }

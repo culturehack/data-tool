@@ -74,7 +74,7 @@
                 <div class="meta">
 
                   <% if source['size'] %>
-                    Size <abbr class="size size-<%= source['size'].downcase %>" title="<%= source['size'] %>"><%= size_abbreviation(source['size']) %></abbr>
+                    <abbr class="size size-<%= source['size'].downcase %>" title="<%= source['size'] %>"><%= size_abbreviation(source['size']) %></abbr>
                   <% end %>
 
                   <% if source['categories'] %>
@@ -93,9 +93,11 @@
                     </span> 
                   <% end %>
 
-                  <% if source['licence'] %>
+                  <% if source['licences'] %>
                     <span class='licences'>
-                      <span class="licence"><%= source['licence'] %></span>
+                      <% source['licences'].each do |licence| %>                      
+                        <span class="licence"><%= licence %></span>
+                      <% end %>
                     </span> 
                   <% end %>
 

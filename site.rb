@@ -36,6 +36,18 @@ helpers do
 
   end
 
+  def size_range(size)
+
+    if size == 'Small'
+      'Less than 10K records'
+    elsif size == 'Medium'
+      '10K - 1 million records'
+    elsif size == 'Huge'
+      'Over 1 million records'
+    end
+
+  end
+
 end
 
 SOURCES = []

@@ -4,7 +4,8 @@ publisher: Project Gutenberg
 categories: [Literature]
 size: Medium
 size_description: 42,000+ individual books available.
-licence: Public Domain
+licences: 
+  - "PD"
 licence_description: Most of the books are out of copyright in the USA. Other jurisdictions may vary.
 media: text
 update_frequency: Daily

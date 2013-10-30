@@ -5,7 +5,8 @@ categories:
   - History
 size: Medium
 size_description: "The database lists over 25,000 plaques, Wordwide."
-licence: Public Domain
+licences: 
+  - "PD"
 licence_description: "The metadata about the plaques is available under a Public Domain dedication. Photos of the plaques are under separate licences, many Creative Commons."
 media: data
 formats: 

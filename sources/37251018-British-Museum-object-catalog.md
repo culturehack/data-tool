@@ -5,7 +5,6 @@ categories:
   - History
 size: Huge
 size_description: "More than 2 million+ object records. Around 800,000 have images."
-licence: null
 licence_description: "Non-commercial and research use only"
 media: text
 formats: 

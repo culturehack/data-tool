@@ -28,7 +28,7 @@
 
       <div class="article-layout">
 
-        <article class="article-conent">
+        <article class="article-content">
 
           <header>
             <h1><%= title(@source['title']) %></h1>
@@ -49,14 +49,15 @@
                   <% end %>
                 </span>
               <% end %>
+
             </div>
           </header>
 
           <%= RDiscount.new(@source['content']).to_html %>
 
-
           <% if @source['size_description'] %>
             <h2>Dataset Size</h2>
+
             <%= RDiscount.new(@source['size_description']).to_html %>
           <% end %>
 
@@ -73,6 +74,39 @@
         </article>
 
         <aside class="article-aside">
+
+          <div class="article-summary">
+
+            <% if @source['formats'] %>
+              <div class="summary-section">
+                <h2>Formats</h2>
+                <span class='formats'>
+                  <% @source['formats'].each do |format| %>
+                    <span class="format"><%= format %></span>
+                  <% end %>
+                </span> 
+              </div>
+            <% end %>
+
+            <% if @source['size'] %>
+              <div class="summary-section">  
+                <h2>Size</h2>                      
+                <p><abbr class="size size-<%= @source['size'].downcase %>" title="<%= @source['size'] %>"><%= size_abbreviation(@source['size']) %></abbr> <%= size_range(@source['size']) %></p>
+              </div>
+            <% end %>
+
+            <% if @source['licences'] %>
+              <div class="summary-section">
+                <h2>Licencing</h2>
+                <span class='licences'>
+                  <% @source['licences'].each do |licence| %>
+                    <span class="licence"><%= licence %></span>
+                  <% end %>
+                </span> 
+              </div>
+            <% end %>   
+
+          </div>
 
         </aside>
       </div>
