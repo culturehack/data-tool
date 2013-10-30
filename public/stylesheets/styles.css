@@ -88,11 +88,34 @@ a {
   margin: 0 0 5px 0;
 }
 
+.filter a:hover::after {
+  content: '+';
+  float: right;
+  color: white;
+  background-color: #333;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
 .filter a.selected {
   background-color: #333;
   color: #CCC;
 }
 
+.filter a.selected:hover::after {
+  content: '–';
+  float: right;
+  color: #333;
+  background-color: white;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
 
 /* Layouts */
 
