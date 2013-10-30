@@ -27,7 +27,7 @@
     <div class="page-content">
 
 
-      <h1><%= @source['title'] %></h1>
+      <h1><%= title(@source['title']) %></h1>
 
       <%= RDiscount.new(@source['content']).to_html %>
 

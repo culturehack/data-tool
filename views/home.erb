@@ -65,7 +65,7 @@
             <% @sources.each do |source| %>
               <article class="data-source">
                 <header class="title">
-                  <a href="/dataset/<%= source['path'] %>"><%= source['title'] %></a>
+                  <a href="/dataset/<%= source['path'] %>"><%= title(source['title']) %></a>
                 </header>
 
                 <%= RDiscount.new(truncate(source['content'])).to_html %>
@@ -77,11 +77,13 @@
                     Size <abbr class="size size-<%= source['size'].downcase %>" title="<%= source['size'] %>"><%= size_abbreviation(source['size']) %></abbr>
                   <% end %>
 
-                  <span class='categories'>
-                    <% source['categories'].each do |category| %>
-                      <span class="category"><%= category %></span>
-                    <% end %>
-                  </span>                
+                  <% if source['categories'] %>
+                    <span class='categories'>
+                      <% source['categories'].each do |category| %>
+                        <span class="category"><%= category %></span>
+                      <% end %>
+                    </span>
+                  <% end %>
 
                   <% if source['formats'] %>
                     <span class='formats'>

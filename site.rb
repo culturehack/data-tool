@@ -13,6 +13,17 @@ helpers do
     return truncated_text
   end
 
+  def title(text)
+
+    text = text.to_s.strip
+
+    if text == ''
+      "Untitled"
+    else
+      text
+    end
+  end
+
   def size_abbreviation(size)
 
     if size == 'Medium'
@@ -38,13 +49,19 @@ LIST.each do |file_name|
 
   file_content = File.read(file)
 
-  s = YAML.load(file_content).merge!({
+  source = {}
+
+  metadata = YAML.load(file_content)
+
+  source = source.merge!(metadata) if metadata
+
+  source = source.merge!({
     'path' => file_name.gsub('.md', ''),
     'id' => file_name[/\A\d+/],
     'content' => file_content.gsub(/---(.|\n)*---/, '').strip
     })
 
-  SOURCES << s
+  SOURCES << source
 
 end
 
