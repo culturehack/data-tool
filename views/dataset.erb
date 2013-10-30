@@ -26,29 +26,56 @@
 
     <div class="page-content">
 
+      <div class="article-layout">
 
-      <h1><%= title(@source['title']) %></h1>
+        <article class="article-conent">
 
-      <%= RDiscount.new(@source['content']).to_html %>
+          <header>
+            <h1><%= title(@source['title']) %></h1>
+            <div class="article-meta">
+
+              <% if @source['link'] %>
+                <a href="<%= @source['link'] %>" class="button-right button-external">Visit site</a>
+              <% end %>
+
+              <% if @source['publisher'] %>
+                <p>Published by <span class="publisher"><%= @source['publisher'] %></span></p>
+              <% end %>
+
+              <% if @source['categories'] %>
+                <span class='categories'>
+                  <% @source['categories'].each do |category| %>
+                    <span class="category"><%= category %></span>
+                  <% end %>
+                </span>
+              <% end %>
+            </div>
+          </header>
+
+          <%= RDiscount.new(@source['content']).to_html %>
 
 
-      <% if @source['size_description'] %>
-        <h2>Size</h2>
-        <%= RDiscount.new(@source['size_description']).to_html %>
-      <% end %>
+          <% if @source['size_description'] %>
+            <h2>Dataset Size</h2>
+            <%= RDiscount.new(@source['size_description']).to_html %>
+          <% end %>
 
 
-      <% if @source['licence_description'] %>
-        <h2>Licensing</h2>
-        <%= RDiscount.new(@source['licence_description']).to_html %>
-      <% end %>
+          <% if @source['licence_description'] %>
+            <h2>Licensing</h2>
+            <%= RDiscount.new(@source['licence_description']).to_html %>
+          <% end %>
 
-      <% if @source['contact_information'] %>
-        <h2>Contact</h2>
-        <%= RDiscount.new(@source['contact_information']).to_html %>
-      <% end %>
+          <% if @source['contact_information'] %>
+            <h2>Contact information</h2>
+            <%= RDiscount.new(@source['contact_information']).to_html %>
+          <% end %>
+        </article>
 
+        <aside class="article-aside">
 
+        </aside>
+      </div>
     </div>
 
   </div>
