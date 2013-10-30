@@ -74,7 +74,7 @@
                 <div class="meta">
 
                   <% if source['size'] %>
-                    Size <span class="size size-<%= source['size'].downcase %>"><%= size_abbreviation(source['size']) %></span>
+                    Size <abbr class="size size-<%= source['size'].downcase %>" title="<%= source['size'] %>"><%= size_abbreviation(source['size']) %></abbr>
                   <% end %>
 
                   <span class='categories'>
