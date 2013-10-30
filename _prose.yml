@@ -11,6 +11,10 @@ prose:
         field:
           element: "text"
           label: "Publisher"
+      - name: "link"
+        field:
+          element: "text"
+          label: "Link"
       - name: "categories"
         field:
           element: "multiselect"
