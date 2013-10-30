@@ -71,6 +71,13 @@
             <h2>Contact information</h2>
             <%= RDiscount.new(@source['contact_information']).to_html %>
           <% end %>
+
+          <div class="contribute">
+            <p>Is this article out-of-date? 
+              <a href="https://github.com/culturehack/data-tool/blob/master/sources/<%= @source['path'] %>.md">Update it via GitHub</a>.
+            </p>
+          </div>
+
         </article>
 
         <aside class="article-aside">

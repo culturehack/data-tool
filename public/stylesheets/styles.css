@@ -357,3 +357,14 @@ article h2 {
 .summary-section p {
   margin: 0;
 }
+
+.contribute {
+  background-color: #EFEFEF;
+  padding: 10px;
+  font-size: 14px;  
+  text-align: center;
+}
+
+.contribute p {
+  margin: 0;
+}
