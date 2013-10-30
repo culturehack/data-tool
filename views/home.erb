@@ -29,31 +29,7 @@
 
         <div class="listings-options">
           
-          <section class="options-block">
-            <header class="options-header">
-              Categories
-            </header>
-            <div class="options-content">
-
-              <div class="filter">
-
-                <% ['Art', 'Literature', 'Music', 'Performance', 'Fashion', 'Media', 'History'].each do |category| %>
-
-                  <% if @categories.include?(category) %>
-                    <% link_categories = @categories.select {|x| x != category} %>
-                    <% html_class = 'selected' %>
-                  <% else %>
-                    <% link_categories = (@categories + [category]) %>
-                  <% end %>
-
-                  <a href="./?categories=<%= link_categories.sort.join(',') %>" class="<%= html_class %>"><%= category %></a> 
-                <% end %>
-              </div>
-
-            </div>
-
-          </section>
-
+          <%= erb :filters %>                    
 
         </div>
 
@@ -61,10 +37,13 @@
 
           <h1>Data sources</h1>
 
-          <% if @categories.size > 0 %>
+          <% if @categories.size > 0 || @sizes.size > 0 %>
             <p>Filters: 
               <% @categories.each do |category| %>
                 <span class="category"><%= category %></span>
+              <% end %>
+              <% @sizes.each do |size| %>
+                <span class="size size-<%= size %>"><%= size_abbreviation(size) %></span>
               <% end %>
             </p>
           <% end %>

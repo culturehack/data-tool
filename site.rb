@@ -3,6 +3,22 @@ require 'rdiscount'
 require 'yaml'
 
 
+  CATEGORIES = [
+    'Art', 
+    'Literature',
+    'Music', 
+    'Performance', 
+    'Fashion', 
+    'Media', 
+    'History'
+  ]
+
+  SIZES = [
+    'Small',
+    'Medium',
+    'Huge'
+  ]
+
 helpers do
 
   def truncate(text, length = 300, options = {})
@@ -81,13 +97,16 @@ end
 get '/' do
 
   @categories = params[:categories].to_s.split(',')
+  @sizes = params[:size].to_s.split(',')
 
 
-  if @categories.size > 0
-    @sources = SOURCES.select {|source| (source['categories'] & @categories)[0] }
-  else
-    @sources = SOURCES
-  end
+  category_filters = @categories.size > 0 ? @categories : CATEGORIES
+  size_filters = @sizes.size > 0 ? @sizes : SIZES
+
+    @sources = SOURCES.select do |source| 
+      (source['categories'] & category_filters)[0] &&
+      (size_filters.include?(source['size']))
+    end
 
   if @sources.size > 0
     erb :home
