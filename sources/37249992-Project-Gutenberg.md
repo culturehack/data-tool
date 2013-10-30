@@ -4,14 +4,14 @@ publisher: Project Gutenberg
 categories: 
   - Literature
 size: Medium
-size_description: null
+size_description: "42,000+ individual books available."
 licences: 
   - PD
-licence_description: null
+licence_description: Most of the books are out of copyright in the USA. Other jurisdictions may vary.
 media: text
 update_frequency: Daily
 first_published_at: 1971
-contact_information: null
+contact_information: "See the [Project Gutenberg contact information](http://www.gutenberg.org/wiki/Gutenberg:Contact_Information) page."
 score: 5
 link: "http://www.gutenberg.org/"
 published: true
