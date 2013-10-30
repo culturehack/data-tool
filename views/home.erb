@@ -61,6 +61,14 @@
 
           <h1>Data sources</h1>
 
+          <% if @categories.size > 0 %>
+            <p>Filters: 
+              <% @categories.each do |category| %>
+                <span class="category"><%= category %></span>
+              <% end %>
+            </p>
+          <% end %>
+
           <div class="data-sources">
             <% @sources.each do |source| %>
               <article class="data-source">
