@@ -53,7 +53,7 @@ prose:
           label: "Licences"
           help: "How is the data or content licenced?"
           options:
-            - name: "Creative Commons 0"
+            - name: "Creative Commons Zero"
               value: "CC0"
             - name: "Public Domain"
               value: "PD"
@@ -64,5 +64,31 @@ prose:
             - name: "Creative Commons Attribution Share-Alike"
               value: "CC-BY-SA"          
             - name: "Creative Commons Attribution Non-Commercial Share-Alike"
-              value: "CC-BY-NC-SA"          
+              value: "CC-BY-NC-SA"  
+      - name: "licence_description"
+        field: 
+          element: "textarea"
+          label: "Licence description"
+          placeholder: "Further details about the data licencing"
+      - name: "formats"
+        field: 
+          element: "multiselect"
+          label: "Formats"
+          options:
+            - name: "CSV"
+              value: "CSV"
+            - name: "JSON"
+              value: "JSON"
+            - name: "PDF"
+              value: "PDF"
+            - name: "RDF"
+              value: "RDF"
+            - name: "RSS"
+              value: "RSS"
+            - name: "XML"
+              value: "XML"
+      - name: "contact_information"
+        field:
+          element: "textarea"
+          label: "Contact information"
             
