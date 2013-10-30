@@ -2,6 +2,20 @@ require 'sinatra'
 require 'rdiscount'
 require 'yaml'
 
+
+
+helpers do
+
+  def truncate(text, length = 300, options = {})
+    
+    truncated_text = text[0,length]
+    truncated_text += ' ...' if text.length > length
+
+    return truncated_text
+  end
+
+end
+
 SOURCES = []
 
 
@@ -11,7 +25,13 @@ LIST.each do |file_name|
 
   file = File.join('sources', file_name)
 
-  SOURCES << YAML.load(File.read(file)).merge!({'path' => file_name.gsub('.md', '')})
+  file_content = File.read(file)
+
+  s = YAML.load(file_content).merge!({'path' => file_name.gsub('.md', '')})
+
+  s[:content] = file_content.gsub(/---(.|\n)*---/, '').strip
+
+  SOURCES << s
 
 end
 

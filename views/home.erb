@@ -18,37 +18,83 @@
         <a href="http://culturehack.org.uk/blog/">Blog</a>
         <a href="http://culturehack.org.uk/prototypes/">Prototypes</a>
         <a href="http://culturehack.org.uk/hack-events/">Hack events</a>
-        <a href="/" class="active">Toolkit</a>
+        <a href="/" class="active">Data sources</a>
         <a href="http://culturehack.org.uk/get-in-touch/">Get in touch</a>
       </nav>
     </div>
 
     <div class="page-content">
-      <h1>Data sources</h1>
 
-      <nav class="filter">
-        Filter: 
+      <div class="listings-layout">
 
-        <% ['Art', 'Literature', 'Music', 'Performance', 'Fashion', 'Media', 'History'].each do |category| %>
+        <div class="listings-options">
+          
+          <section class="options-block">
+            <header class="options-header">
+              Categories
+            </header>
+            <div class="options-content">
 
-          <% if @categories.include?(category) %>
-            <% link_categories = @categories.select {|x| x != category} %>
-            <% html_class = 'selected' %>
-          <% else %>
-            <% link_categories = (@categories + [category]) %>
-          <% end %>
+              <div class="filter">
 
-          <a href="./?categories=<%= link_categories.sort.join(',') %>" class="<%= html_class %>"><%= category %></a> 
-        <% end %>
-      </nav>
+                <% ['Art', 'Literature', 'Music', 'Performance', 'Fashion', 'Media', 'History'].each do |category| %>
 
-      <ul>
-        <% @sources.each do |source| %>
-          <li><a href="/dataset/<%= source['path'] %>"><%= source['title'] %></a></li>
-        <% end %>
-      </ul>
+                  <% if @categories.include?(category) %>
+                    <% link_categories = @categories.select {|x| x != category} %>
+                    <% html_class = 'selected' %>
+                  <% else %>
+                    <% link_categories = (@categories + [category]) %>
+                  <% end %>
+
+                  <a href="./?categories=<%= link_categories.sort.join(',') %>" class="<%= html_class %>"><%= category %></a> 
+                <% end %>
+              </div>
+
+            </div>
+
+          </section>
 
 
+        </div>
+
+        <div class="listings-content">
+
+          <h1>Data sources</h1>
+
+          <div class="data-sources">
+            <% @sources.each do |source| %>
+              <article class="data-source">
+                <header class="title">
+                  <a href="/dataset/<%= source['path'] %>"><%= source['title'] %></a>
+                </header>
+
+                <%#= truncate(source[:content]) %>
+
+                <%#= truncate("XXXX") %>
+
+                <%= RDiscount.new(truncate(source[:content])).to_html %>
+
+              </article>
+            
+            <% end %>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+    <div class="page-footer">
+      <div class="footer-content">
+        <p>Website produced by Frankie Roberto and Kim Plowright for Culture Hack.</p>
+        <p>Content available under Creative Commons Public Domain dedication.</p>
+      </div>
     </div>
 
   </div>

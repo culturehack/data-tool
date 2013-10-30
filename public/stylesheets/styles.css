@@ -1,3 +1,4 @@
+
 body {
   background: #fff;
   border-top: 6px solid #389c9a;
@@ -9,10 +10,27 @@ body {
   color: #506666;
 }
 
-
 .page {
+  padding: 0;
+  margin: 0;
+}
+
+.page-header {
   max-width: 960px;
   margin: 0 auto;
+}
+
+.page-content {
+  padding-top: 15px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.page-footer {
+  background-color: #EFEFEF;
+  padding: 10px;
+  margin: 0;
+  border-bottom: 6px solid #389C9A;  
 }
 
 .logo-link {
@@ -60,17 +78,91 @@ a {
 }
 
 .filter {
-  text-align: center;
+
 }
 
 .filter a {
-  display: inline-block;
-  margin-right: 5px;
+  display: block;
   background-color: #CCC;
   padding: 5px 10px;
+  margin: 0 0 5px 0;
 }
 
 .filter a.selected {
   background-color: #333;
   color: #CCC;
+}
+
+.listings-layout {
+  display: table;
+  width: 100%;
+  margin: 0 0 30px 0;
+}
+
+.listings-options,
+.listings-content {
+  display: table-cell;
+}
+
+.listings-options {
+  width: 25%;
+}
+
+.listings-content {
+  padding-left: 20px;
+}
+
+.options-block {
+  background-color: #EFEFEF;
+}
+
+.options-header {
+  background-color: #D93D24;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding: 3px 10px;
+}
+
+.options-content {
+  padding: 10px;
+}
+
+.data-sources {
+  background-color: #EFEFEF;
+  padding: 12px;
+  border-bottom: 6px solid #389C9A;
+}
+
+.data-source {
+  padding: 6px 0;
+  border-bottom: 2px #BCBDC0 dotted;
+}
+
+.data-sources .title {
+  font-size: 24px;
+}
+
+.data-sources .title a {
+  display: block;
+}
+
+.data-sources .title a:hover {
+  color: #1d5150;
+}
+
+.page-footer  {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.page-footer .footer-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.page-footer p {
+  margin: 0;
 }
