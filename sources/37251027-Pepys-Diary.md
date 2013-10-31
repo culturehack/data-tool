@@ -14,3 +14,5 @@ link: http://www.pepysdiary.com/about/formats/
 ---
 
 Phil Gyford has recently finished his real-time retelling of the amazing Pepys Diary. The most recent entries are availabe via RSS 
+
+It's great.
