@@ -98,14 +98,26 @@ get '/' do
 
   @categories = params[:categories].to_s.split(',')
   @sizes = params[:size].to_s.split(',')
+  @search_term = params[:q].to_s
+
 
 
   category_filters = @categories.size > 0 ? @categories : CATEGORIES
   size_filters = @sizes.size > 0 ? @sizes : SIZES
 
+  search_token = @search_term.downcase.strip.squeeze(' ').gsub(/[^a-z\s]/, '')
+
+  if search_token != ''
+    search_regex = /\b#{search_token}\b/
+  else
+    search_regex = /.*/
+  end
+
     @sources = SOURCES.select do |source| 
       (source['categories'] & category_filters)[0] &&
-      (size_filters.include?(source['size']))
+      (size_filters.include?(source['size'])) &&
+      (source['title'].downcase =~ search_regex ||
+        source['content'].downcase =~ search_regex)
     end
 
   if @sources.size > 0

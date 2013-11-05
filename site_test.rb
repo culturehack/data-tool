@@ -16,4 +16,15 @@ class SiteTest < Test::Unit::TestCase
     assert last_response.ok?
   end
 
+  def test_search
+    get '/?q=open'
+    assert last_response.ok?
+  end
+
+  def test_source
+    get '/dataset/37249992-Project-Gutenberg'
+    assert last_response.ok?
+  end
+
+
 end

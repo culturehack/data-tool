@@ -37,6 +37,11 @@
 
           <h1>Data sources</h1>
 
+          <% if @search_term != ''%>
+
+            <p>Search results for: <strong><%= @search_term %></strong></p>
+          <% end %>
+
           <% if @categories.size > 0 || @sizes.size > 0 %>
             <p>Filters: 
               <% @categories.each do |category| %>
