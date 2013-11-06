@@ -3,6 +3,7 @@ title: The Public Domain Review
 publisher: Open Knowledge Foundation
 categories: 
   - History
+  - Literature
 size: Medium
 link: "http://publicdomainreview.org/"
 licences:
