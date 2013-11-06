@@ -428,6 +428,17 @@ article h2 {
   margin: 0 0 1em 0;
 }
 
+.note a {
+  color: #DDD;
+  border-width: 0 0 2px 0;
+  border-color: #AAA;
+  border-style: solid;
+}
+
+.note a:hover {
+  border-color: white;
+}
+
 .note p {
   margin: 0;
 }

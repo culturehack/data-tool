@@ -143,3 +143,7 @@ get '/dataset/:id' do |id|
 
   erb :dataset
 end
+
+get '/about' do
+  erb :about
+end

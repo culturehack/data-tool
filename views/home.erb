@@ -38,7 +38,7 @@
           <% if @search_term == '' && @categories.size == 0 && @sizes.size == 0 %>
 
             <div class="note">
-              <p>Explore open data about arts and culture. 
+              <p>Explore open data about arts and culture. <a href="/about">About this data</a>
               </p>
 
             </div>
@@ -114,19 +114,9 @@
       </div>
 
 
-
-
-
-
-
     </div>
 
-    <div class="page-footer">
-      <div class="footer-content">
-        <p>Website produced by Frankie Roberto and Kim Plowright for Culture Hack.</p>
-        <p>Content available under Creative Commons Public Domain dedication.</p>
-      </div>
-    </div>
+    <%= erb :footer %>                    
 
   </div>
 </body>
