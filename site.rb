@@ -55,11 +55,11 @@ helpers do
   def size_range(size)
 
     if size == 'Small'
-      'Less than 10K records'
+      'Under 10k records'
     elsif size == 'Medium'
-      '10K - 1 million records'
+      '10k – 1m records'
     elsif size == 'Huge'
-      'Over 1 million records'
+      '1m+ records'
     end
 
   end

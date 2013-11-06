@@ -60,7 +60,7 @@
 
         <% link_categories = @categories %>
 
-        <a href="./?categories=<%= link_categories.sort.join(',') %>&amp;size=<%= link_sizes.sort.join(',') %>" class="<%= html_class %>"><%= size %></a> 
+        <a href="./?categories=<%= link_categories.sort.join(',') %>&amp;size=<%= link_sizes.sort.join(',') %>" class="<%= html_class %>"><span class="name"><%= size %></span> <small class="description"><%= size_range(size) %></small></a> 
       <% end %>
     </div>
 

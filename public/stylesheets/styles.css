@@ -136,6 +136,7 @@ a {
 .listings-options,
 .listings-content {
   display: table-cell;
+  vertical-align: top;
 }
 
 .listings-options {
@@ -189,10 +190,26 @@ a {
   padding: 10px;
 }
 
+.listings-header {
+  margin: 0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;  
+  text-transform: uppercase;
+}
+
+.listings-header h1 {
+  display: inline-block;
+  background-color: #389c9a;
+  color: white;
+  margin: 0;
+  padding: 6px 10px;
+  font-size: 16px;  
+}
+
 .data-sources {
   background-color: #EFEFEF;
   padding: 12px;
   border-bottom: 6px solid #389C9A;
+  border-top:6px solid #389c9a;
 }
 
 .data-source {
@@ -398,4 +415,32 @@ article h2 {
 
 .contribute p {
   margin: 0;
+}
+
+
+.note {
+  background-color: #389c9a;
+  color: white;
+  font-size: 24px;
+  line-height: 1.4em;
+  border-bottom: 6px solid #4fc4c8;
+  padding: 14px;
+  margin: 0 0 1em 0;
+}
+
+.note p {
+  margin: 0;
+}
+
+small {
+  font-size: 12px;
+}
+
+.filter .name {
+  display: inline-block;
+  width: 70px;
+}
+
+.filter .description {
+  display: inline-block;
 }
