@@ -10,7 +10,7 @@ A collection of cultural data sets and sources &amp; a website to browse them.
 
 To add a data set, first look through the site to make sure it's not already included.
 
-Then create an Artisanal Integer* (eg from [London Integers](http://www.londonintegers.com)), and create a file with the format `&lt;integer&gt;-name-of-source.md` in the [sources](https://github.com/culturehack/data-tool/tree/master/sources) folder.
+Then create an Artisanal Integer* (eg from [London Integers](http://www.londonintegers.com)), and create a file with the format `integer-Name-of-Source.md` in the [sources](https://github.com/culturehack/data-tool/tree/master/sources) folder.
 
 Use one the existing sources as a guide. You can add metadata using the YAML 'frontmatter' format – but don’t worry about this if you don’t know what that means.
 
