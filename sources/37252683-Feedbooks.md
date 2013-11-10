@@ -22,7 +22,7 @@ score: 4
 link: "http://www.feedbooks.com/api"
 ---
 
-[http://www.feedbooks.com/about](Feedbooks) is an online eBook retailer and self-publishing platform, who also make ebooks of public domain literature (fiction and non-fiction) available for free at [http://www.feedbooks.com/publicdomain](http://www.feedbooks.com/publicdomain) via a comprehensive API.
+[Feedbooks](http://www.feedbooks.com/about) is an online eBook retailer and self-publishing platform, who also make ebooks of public domain literature (fiction and non-fiction) available for free at [http://www.feedbooks.com/publicdomain](http://www.feedbooks.com/publicdomain) and via a comprehensive API.
 
 Most of the available public domain texts (apx 4,000) seem to be sourced from Project Guttenberg, and are available to download as ePub, Mobi (kindle) and PDF. However, there are also entries for around 6,000 [new, original books](http://www.feedbooks.com/original) released under open CC licenses. 
 
