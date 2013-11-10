@@ -55,26 +55,24 @@ It also allows you to RATE the 'hackability' of this dataset from 1-5, where 5 i
 5/5
 
 * Passes the P test: you could do something in an hour with a language beginning with P
-* Lots of records
-* All pretty much complete
+* Lots of records, all pretty much complete
 * Clean data (eg dates)
-* Pretty pictures and rich content
-* Well supported
-* Good documentation
-* Frequent updates
-* Active Community / Responsive owner
+* Pretty pictures and rich content available, not just metadata
+* Well supported, with good documentation
+* Frequent updates, active community or responsive owner
 
 4/5
 
 * It's going to take me 3 hours to make this work, but I'll do that because it's going to make something awesome.
 * 60% good data: could use some cleaning up, but not terrible. I could work around it in code.
-* A bit awkward to work with - perhaps flat files rather than a nice dynamic API
+* A bit awkward to work with - perhaps flat files rather than a nice dynamic API - or an overly complex implementation.
 * Documentation makes me mildly punchy
 * Might not have a lot of pretties, images, rich media associated with it.
 
 3/5
 
 * Kind of nearly there, but might not be enough to do something awesome: I'd need to be really motivated to work with this, or for it to be exactly the right information for my idea.
+* Feels a bit flat - data, but not very dynamic or deep
 * A CSV with 400 things in it, and quite a few gremlin characters
 
 2/5
@@ -82,6 +80,7 @@ It also allows you to RATE the 'hackability' of this dataset from 1-5, where 5 i
 * I would complain quite loudly if you asked me to work with this in the context of paying me a good salary.
 * An MS SQL Database
 * A spreadsheet made by an idiot
+* Poor or absent documentation
 
 1/5
 
