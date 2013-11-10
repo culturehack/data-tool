@@ -89,9 +89,20 @@ a {
 
 }
 
+.filter-header {
+  font-size: 18px;
+  color: #b2311d;
+  border-bottom: 2px dotted #bcbdc0;
+  margin-bottom: 7px;
+  margin-top: 7px;
+	padding: 3px 10px 3px 0;
+}
+
+
 .filter a {
   display: block;
-  background-color: #CCC;
+  color: #506565;
+  background-color: #dddcdc;
   padding: 5px 10px;
   margin: 0 0 5px 0;
 }
@@ -99,8 +110,8 @@ a {
 .filter a:hover::after {
   content: '+';
   float: right;
-  color: white;
-  background-color: #333;
+  color: #fefefe;
+  background-color: #1d504f;
   font-weight: bold;
   width: 20px;
   height: 20px;
@@ -109,14 +120,14 @@ a {
 }
 
 .filter a.selected {
-  background-color: #333;
-  color: #CCC;
+  background-color: #1d504f;
+  color: #fefefe;
 }
 
 .filter a.selected:hover::after {
-  content: '–';
+  content: '×';
   float: right;
-  color: #333;
+  color: #b2311d;
   background-color: white;
   font-weight: bold;
   width: 20px;
@@ -174,6 +185,10 @@ a {
 
 .options-block {
   background-color: #EFEFEF;
+  border-bottom-color: #B2321E;
+  border-bottom-style: solid;
+  border-bottom-width: 6px;
+  margin-bottom: 12px;
 }
 
 .options-header {
@@ -286,8 +301,11 @@ a {
 }
 
 .category {
-   background-color: #CCC;
+   background-color: #1d504f;
+   color: #fefefe;
    display: inline-block;
+   text-transform: uppercase;
+   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
    padding: 0 6px;
 }
 
@@ -299,7 +317,7 @@ a {
 
 .formats .format {
    background-color: #389C9A;
-   color: white;
+   color: #efeeee;
    display: inline-block;
    padding: 0 6px;
 }
@@ -311,7 +329,7 @@ a {
 }
 
 .licences .licence {
-   background-color: #506666;
+   background-color: #444343;
    color: white;
    display: inline-block;
    padding: 0 6px;
@@ -391,7 +409,7 @@ article h2 {
 
 .summary-section {
   padding: 0 0 10px 0;
-  border-bottom: 1px solid #777;
+  border-bottom: 2px dotted #bcbdc0;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -429,14 +447,16 @@ article h2 {
 }
 
 .note a {
-  color: #DDD;
+  color: #efeeee;
   border-width: 0 0 2px 0;
-  border-color: #AAA;
-  border-style: solid;
+  border-color: #4fc4c8;
+  border-style: dotted;
 }
 
 .note a:hover {
+  color: #ffffff;
   border-color: white;
+  border-style: solid;
 }
 
 .note p {
@@ -454,4 +474,27 @@ small {
 
 .filter .description {
   display: inline-block;
+}
+
+/* Simple Page Navigation */
+
+.data-navigation {
+	
+}
+
+.data-navigation-section {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+.data-navigation-section a {
+  font-size: 14px;
+  display: block;
+  line-height: 1.8;
+  padding: 0 0 0 3px;
+  margin: 0;
+}
+.data-navigation-section a:hover {
+	color: #4fc3c7;
+	text-decoration: underline;
 }

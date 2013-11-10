@@ -1,6 +1,8 @@
 
 <section class="options-block">
-
+  <header class="options-header">
+    Search
+  </header>
   <div class="options-content">
 
     <div class="filter">
@@ -15,10 +17,16 @@
 </section>
 
 <section class="options-block">
+  
   <header class="options-header">
-    Categories
+    Filter
   </header>
+  
   <div class="options-content">
+
+    <header class="filter-header">
+      Categories
+    </header>
 
     <div class="filter">
 
@@ -36,16 +44,11 @@
         <a href="./?categories=<%= link_categories.sort.join(',') %>&amp;size=<%= link_sizes.sort.join(',') %>" class="<%= html_class %>"><%= category %></a> 
       <% end %>
     </div>
-
-  </div>
-
-</section>
-
-<section class="options-block">
-  <header class="options-header">
+  
+  <header class="filter-header">
     Dataset size
   </header>
-  <div class="options-content">
+
 
     <div class="filter">
 
