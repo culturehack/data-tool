@@ -15,7 +15,6 @@ size_description: "The size and content of the database in human readable senten
 licences: 
   - "PD"
   - "CC0" 
-  - "PD"
   - "CC-BY"
   - "CC-BY-NC"
   - "CC-BY-SA"
@@ -28,9 +27,14 @@ formats:
   - JSON
   - XML
   - RSS
+  - OPDS
+  - REST-API
 update_frequency: daily
+
 contact_information: "E-mail: [email@example.com](mailto:email@example.com) Twitter: [@example](https://twitter.com/example)"
+
 score: 5
+
 link: "http://data.culturehack.org/"
 ---
 
@@ -44,13 +48,21 @@ We should add credits to any data here, with relevant links, if the publisher fi
 
 It is written in [Markdown](http://daringfireball.net/projects/markdown/), which means you can do simple formatting in plaintext, and it will be automatically interpreted as a nice readable HTML document by places like Github, whilst remaining human readable.
 
-# The Data / Librarian / Metadata / Database bit
+## Used In Anger
+
+This section is for detailing any prototypes made with this set.
+
+## Technical Details
+
+This section is the technical stuff: for a developer audience. Feels like a readme
+
+## The Data / Librarian / Metadata / Database bit
 
 The block of stuff at the top of one of these text files is a [YAML](http://yaml.org) data block - it's the simplest possible way of adding structured metadata to a plain text file. This allows you to add a bit of structured data to the record. 
 
 It also allows you to RATE the 'hackability' of this dataset from 1-5, where 5 is best. To make your life easier, we've written a guide to how we think those ratings work from the point of view of a creative technologist. It's a rating scale that's about *doing* things with the data, rather than espousing a certain philosophy about how you should release data or create the sematic web. Oh, apart from the bit where we snark about MS SQL, but that's because we actually had that problem on a hack day once.
 
-## Culture Hack 'Hackability' Scale
+### Culture Hack 'Hackability' Scale
 
 5/5
 
@@ -122,5 +134,7 @@ With a plain text description of what it contains
 * JSON
 * XML
 * RSS
+* REST-API
+* OPDS
 
 
