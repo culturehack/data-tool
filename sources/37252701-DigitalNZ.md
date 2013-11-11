@@ -16,7 +16,7 @@ formats:
   - XML
   - RSS
   - REST-API
-update_frequency: 
+update_frequency: unknown
 contact_information: "Email: [develop@digitalnz.org](mailto:develop@digitalnz.org) Mailing List: [email@example.com](http://groups.google.com/group/digitalnz) Twitter: [@digitalnz](https://twitter.com/digitalnz)"
 score: 5
 link: "http://www.digitalnz.org.nz/developers"
