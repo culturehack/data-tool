@@ -22,14 +22,15 @@ contact_information: "Mailing List: [ol-tech mailing list](http://mail.archive.o
 The Open Library is aiming to create a webpage for every book published. It contains over 20 million records.
 
 It provides APIs for
-Books
-Covers
-Lists 
-Read - new!
-Recent Changes
-Search
-Search inside
-Subjects
+
+* Books
+* Covers
+* Lists 
+* Read
+* Recent Changes
+* Search
+* Search inside
+* Subjects
 
 Open Library Bibliographic Data is available to bulk download. You can also return bibliographic data by simply adding an .rdf/.json/.yml extension to the end of any OL bibliographic identifier.
 
