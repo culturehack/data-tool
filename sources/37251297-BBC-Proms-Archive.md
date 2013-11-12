@@ -3,8 +3,40 @@ title: BBC Proms Archive
 publisher: BBC
 categories: 
   - Performance
+  - Music
+license:
+  - ©
+formats: 
+  - HTML
 size: Small
+update_frequency: annually
+contact_information: "Twitter: [@bbcproms](https://twitter.com/bbcproms)"
+score: 3
 link: "http://www.bbc.co.uk/proms/archive"
 ---
 
-Delve into the 119-year history of the world's greatest classical music festival. You can search this rich archive by composer and works, year or artist.
+An archive site (appears to be HTML only, with no raw data available) covering the history of the Proms classical music festival right back to 1895.
+
+The archive is searchable by composer and works, decade and year ('seasons') or artist ('Performers'). 
+
+Names are not cross referenced in the main text, but in a sidebar under 'Find more events'.
+
+This is an interesting dataset, but could be linked up to other sources of information about music and performance.
+
+## Example ##
+
+<http://www.bbc.co.uk/proms/archive/search/2010s/2011/august-25/64>
+
+This entry includes:
+* Images
+* Date, Time and Location
+* Title of Event
+* Works Performed (and duration)
+* Performers and Roles
+* Brief Programme Notes
+
+## Technical Details ##
+
+The pages declare as XHTML+RDFa and are well structured, but do not appear to use any micro formats or many semantic CSS selectors to make scraping easier.
+
+URLs are meaningful, with individual concerts indexed by ID number and date.
