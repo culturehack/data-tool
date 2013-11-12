@@ -79,6 +79,7 @@ LIST.each do |file_name|
 
   source = {}
 
+  puts "Parsing #{file_name}"
   metadata = YAML.load(file_content)
 
   source = source.merge!(metadata) if metadata
