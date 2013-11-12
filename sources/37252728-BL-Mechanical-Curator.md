@@ -11,7 +11,7 @@ licences:
   - "CC0"
 licence_description: "Images released are out of copyright due to age. Released as CC0, some marked CC-BY on flickr."
 media: images
-formats
+formats:
   - JSON
   - XML-RPC
   - REST-API

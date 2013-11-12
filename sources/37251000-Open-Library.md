@@ -16,8 +16,7 @@ formats:
   - RDF
   - XML
 link: http://openlibrary.org/developers
-contact_information: "Mailing List: [ol-tech mailing list](http://mail.archive.org/cgi-bin/mailman/listinfo/ol-tech)
-
+contact_information: "Mailing List: [ol-tech mailing list](http://mail.archive.org/cgi-bin/mailman/listinfo/ol-tech)"
 ---
 
 The Open Library is aiming to create a webpage for every book published. It contains over 20 million records.
