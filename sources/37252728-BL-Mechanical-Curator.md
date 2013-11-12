@@ -33,7 +33,7 @@ Ben O'Steen has written up the [idea, code and publishing process](http://britis
 
 <http://www.flickr.com/photos/mechanicalcuratorcuttings/10599176186/>
 
-<a href="http://www.flickr.com/photos/mechanicalcuratorcuttings/10599176186" title="Image taken from page 9 of &#x27;Works of Charles Dickens. New illustrated library edition. [With a preface to each work by Edwin P. Whipple.]&#x27; by Mechanical Curator&#x27;s Cuttings, on Flickr"><img src="//farm4.staticflickr.com/3770/10599176186_d3ffd7c4d5_m.jpg" width="180" height="240" alt="Image taken from page 9 of &#x27;Works of Charles Dickens. New illustrated library edition. [With a preface to each work by Edwin P. Whipple.]&#x27;"></a>
+<a href="http://www.flickr.com/photos/mechanicalcuratorcuttings/10599176186" title="Image taken from page 9 of &#x27;Works of Charles Dickens. New illustrated library edition. [With a preface to each work by Edwin P. Whipple.]&#x27; by Mechanical Curator&#x27;s Cuttings, on Flickr"><img src="http://farm4.staticflickr.com/3770/10599176186_d3ffd7c4d5_m.jpg" width="180" height="240" alt="Image taken from page 9 of &#x27;Works of Charles Dickens. New illustrated library edition. [With a preface to each work by Edwin P. Whipple.]&#x27;"></a>
 
 
 Original image size: (576 x 766)
