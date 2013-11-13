@@ -105,11 +105,11 @@
             <% if @source['licences'] %>
               <div class="summary-section">
                 <h2>Licencing</h2>
-                <span class='licences'>
+                <ul class='licences-list'>
                   <% @source['licences'].each do |licence| %>
-                    <span class="licence"><%= licence %></span>
+                    <li><span class="licence"><%= licence %></span> <%= licence_full_name(licence) %></li>
                   <% end %>
-                </span> 
+                </ul> 
               </div>
             <% end %>   
 

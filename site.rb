@@ -64,6 +64,27 @@ helpers do
 
   end
 
+  def licence_full_name(licence_code)
+
+    case licence_code
+    when "CC0"
+      "Creative Commons Zero"
+    when "PD"
+      "Public Domain"
+    when "CC-BY"
+      "Creative Commons Attribution"
+    when "CC-BY-NC"
+      "Creative Commons Attribution Non-Commercial"
+    when "CC-BY-SA"
+      "Creative Commons Attribution Share-Alike"
+    when "CC-BY-NC-SA"
+      "Creative Commons Attribution Non-Commercial Share-Alike"
+    else
+      licence_code
+    end
+
+  end
+
 end
 
 SOURCES = []

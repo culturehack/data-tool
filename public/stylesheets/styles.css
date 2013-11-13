@@ -328,7 +328,7 @@ a {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;  
 }
 
-.licences .licence {
+.licence {
    background-color: #444343;
    color: white;
    display: inline-block;
@@ -497,4 +497,19 @@ small {
 .data-navigation-section a:hover {
 	color: #4fc3c7;
 	text-decoration: underline;
+}
+
+.licences-list {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+  font-size: .8em;
+}
+
+.licences-list li {
+  margin: 0 0 1em 0;
+}
+
+.licences-list .licence {
+  margin-right: 1em;
 }
