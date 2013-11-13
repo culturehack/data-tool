@@ -102,6 +102,17 @@
               </div>
             <% end %>
 
+            <% if @source['sample_data'] %>
+              <div class="summary-section">
+                <h2>Sample Data</h2>
+                <ul class='samples'>
+                  <% @source['sample_data'].each do |sample_data| %>
+                    <li><a href="/sample_data/<%= sample_data['filename'] %>" class="sample"><%= sample_data['title'] %></a> (<%= sample_data['type'] %>, <%= sample_data['size'] %>)</li>
+                  <% end %>
+                </ul> 
+              </div>
+            <% end %> 
+
             <% if @source['licences'] %>
               <div class="summary-section">
                 <h2>Licencing</h2>

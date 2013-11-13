@@ -513,3 +513,38 @@ small {
 .licences-list .licence {
   margin-right: 1em;
 }
+
+.samples {
+  text-align: left;
+  list-style-type: none;
+  padding: 0;
+}
+
+.samples li {
+  margin-bottom: 1em;
+  color: #AAA;
+  font-size: .8em;
+}
+
+.samples .sample {
+  display: inline-block;
+  background-color: #4fc4c8;
+  color: white;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.2em;  
+  padding: 5px 10px;
+  border-radius: .5em;
+}
+
+.samples .sample:hover {
+  background-color: #389C9A;
+}
+
+.samples .sample:active {
+  background-color: #389C9A;
+}
+
+.samples .sample:focus {
+  background-color: #389C9A;
+  outline: none;
+}

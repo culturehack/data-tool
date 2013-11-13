@@ -13,6 +13,11 @@ formats:
   - CSV
 categories: 
   - History
+sample_data:
+  - file_name: 'Science_Museum_collections_sample.csv'
+    title: '1000 objects'
+    type: 'CSV'
+    size: '300KB'
 ---
 
 Catalogue data for the collections of the Science Museum, National Railway Museum and National Media Museum.
