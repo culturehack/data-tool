@@ -98,7 +98,7 @@ LIST.each do |file_name|
 
   file_content = File.read(file)
 
-  source = {}
+  source = {'categories' => []}
 
   puts "Parsing #{file_name}"
   metadata = YAML.load(file_content)
