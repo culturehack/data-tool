@@ -17,11 +17,13 @@ link: "http://www.bbc.co.uk/proms/archive"
 
 An archive site (appears to be HTML only, with no raw data available) covering the history of the Proms classical music festival right back to 1895.
 
+Each concert entry has a list of works performed, and the soloists / orchestras.
+
 The archive is searchable by composer and works, decade and year ('seasons') or artist ('Performers'). 
 
 Names are not cross referenced in the main text, but in a sidebar under 'Find more events'.
 
-This is an interesting dataset, but could be linked up to other sources of information about music and performance.
+This is an interesting dataset, but could be linked up to other sources of information about classical music and performance. For instance you could reconstruct spottily playlists of each concert, or issue alerts when the works are coming up on Radio 3...
 
 ## Example ##
 
