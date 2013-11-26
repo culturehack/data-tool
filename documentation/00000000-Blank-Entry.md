@@ -36,7 +36,7 @@ link: "http://data.culturehack.org/"
 
 ## Used In Anger
 
-This section is for detailing any prototypes made with this set.
+This section is for detailing any prototypes made with this data. We haven't found any examples yet: let us know if you've made something.
 
 ## Technical Details
 
