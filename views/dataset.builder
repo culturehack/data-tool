@@ -9,12 +9,14 @@ xml.dataset(:id => @source['id'], :path => @source['path']) do
 
   xml.score @source['score'] if @source['score']
   
-  xml.categories do
-    @source['categories'].each do |category|
-      xml.category do
-        xml.name category
-      end
-    end 
+  if @source['categories']
+    xml.categories do
+      @source['categories'].each do |category|
+        xml.category do
+          xml.name category
+        end
+      end 
+    end
   end
 
   if @source['size']   
@@ -27,10 +29,12 @@ xml.dataset(:id => @source['id'], :path => @source['path']) do
     xml.size_description @source['size_description']
   end
 
-  xml.licences do 
-    @source['licences'].each do |licence|
-      xml.licence(:code => licence) do
-        xml.name(licence_full_name(licence))
+  if @source['licences']
+    xml.licences do 
+      @source['licences'].each do |licence|
+        xml.licence(:code => licence) do
+          xml.name(licence_full_name(licence))
+        end
       end
     end
   end
@@ -40,10 +44,12 @@ xml.dataset(:id => @source['id'], :path => @source['path']) do
   end
 
 
-  xml.formats do 
-    @source['formats'].each do |format|
-      xml.format do
-        xml.name format
+  if @source['formats']
+    xml.formats do 
+      @source['formats'].each do |format|
+        xml.format do
+          xml.name format
+        end
       end
     end
   end
