@@ -1,6 +1,8 @@
 require 'sinatra'
+require 'sinatra/contrib'
 require 'rdiscount'
 require 'yaml'
+require 'builder'
 
 
   CATEGORIES = [
@@ -150,20 +152,25 @@ get '/' do
 
 end
 
-get '/dataset/:id' do |id|
+get '/dataset/:id.?:format?' do |id, format|
 
   @id = id[/\A\d+/]
 
   sources = SOURCES.select {|source| source['id'] == @id }
   
   if sources.size > 0
-
     @source = sources[0]
   else
 
   end
 
-  erb :dataset
+  if format == 'json'
+    json @source
+  elsif format == 'xml'
+    builder :dataset
+  else
+    erb :dataset
+  end
 end
 
 get '/about' do
