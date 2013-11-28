@@ -18,7 +18,7 @@ score: 1
 link: "https://archive.org/details/dictionnairedesv01mireuoft"
 ---
 
-The Dictionnaire des ventes d'art faites en France et à l'étranger pendant les 18me & 19m siècles by Hippolyte Mireur is volume one of a 9 volume index of every artwork sold at auction between 1700-1900 in Europe.
+The *Dictionnaire des ventes d'art faites en France et à l'étranger pendant les 18me & 19m siècles* by Hippolyte Mireur is volume one of a 9 volume index of every artwork sold at auction between 1700-1900 in Europe.
 
 It is pretty much the sole source of historical pricing data for art.
 
