@@ -16,6 +16,8 @@ licences:
   - "PD"
   - "T+C"
   - "CC0" 
+  - "OGL"
+  - "ODbL"
   - "CC-BY"
   - "CC-BY-NC"
   - "CC-BY-SA"
