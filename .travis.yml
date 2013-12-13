@@ -5,7 +5,7 @@ script: bundle exec ruby site_test.rb
 deploy:
   provider: heroku
   api_key:
-    secure: mXIeXrGs8t6QyzwrduRtCUq44a9ivXRFIhSNbwe1RzUn4sdiJg04U8tQnT9IfapY4kukNeuw1cC2O7Xm8cB7EPZfXAie33rfjMNgZ4vjMz08n9+EejVni80d8I9uvVBLb08Seb2PfSm1pc/rda/XcEg7opNd1/oH3i1uY+bCrLA=
+    secure: DbuXP0BqIz30tnhvytHzLwmt7ItJ9KyySSdlGumbCeNDPdQy4e/X3o5C+xUghFAwFTC0Z16dHvyDePcWnmISiscgpIhGqVpnBxczheVuO6o0I5TcJJ0RtlHkirHCu3t1U7zJ5Ky+k+lhMHE+ldFo9L0w0f7xuqGvgfqrCNs78yE=
   app: culture-hack-data
   on:
     repo: culturehack/data-tool
