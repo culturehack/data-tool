@@ -1,3 +1,4 @@
+---
 title: Portable Antiquities Scheme Finds Database
 publisher: Portable Antiquities Scheme / British Museum
 categories: 
@@ -16,10 +17,10 @@ formats:
 update_frequency: 
 contact_information: "E-mail: [info@finds.org.uk](info@finds.org.uk) Twitter: [@findsorguk](https://twitter.com/findsorguk)"
 score: 5
-link: "http://finds.org.uk/"
+link: "http://finds.org.uk/database"
 ---
 
-The [Portable Antiquities Scheme Finds Database](http://finds.org.uk/) is maintained by the British Museum, and contains records of archaeological finds reported by the public - mostly metal detector enthusiasts.
+The [Portable Antiquities Scheme Finds Database](http://finds.org.uk/database) is maintained by the British Museum, and contains records of archaeological finds reported by the public - mostly metal detector enthusiasts.
 
 The database contains around [383k images](http://finds.org.uk/database/images) which are mainly licensed as [CC-BY-SA](http://creativecommons.org/licenses/by-sa/3.0/), and is also cross-referenced with two coin databases - the Oxford University Celtic Coin Index (CCI) and Cardiff University's Iron Age and Roman coins of Wales project (IARCW).
 
