@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'sinatra'
 require 'sinatra/contrib'
 require 'rdiscount'
