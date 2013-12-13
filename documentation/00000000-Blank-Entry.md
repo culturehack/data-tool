@@ -1,4 +1,3 @@
----
 title: Title Of Dataset
 publisher: Name of Publisher
 categories: 
@@ -35,6 +34,7 @@ update_frequency: daily
 contact_information: "E-mail: [email@example.com](mailto:email@example.com) Twitter: [@example](https://twitter.com/example)"
 score: 5
 link: "http://data.culturehack.org/"
+
 ---
 
 
@@ -44,7 +44,10 @@ This section is for detailing any prototypes made with this data. We haven't fou
 
 ## Technical Details
 
+```
 This section is the technical stuff: for a developer audience. Feels like a readme
+```
+<!-- Comment -->
 
 ## The Data / Librarian / Metadata / Database bit
 
