@@ -1,43 +1,30 @@
 ---
-title: Title Of Dataset
-publisher: Name of Publisher
+title: ICOM Red Lists Database
+publisher: International Council of Museums
 categories: 
   - Art
-  - Literature
-  - Music
-  - Performance
-  - Fashion
-  - Media
   - History
 size: Medium
 size_description: "The size and content of the database in human readable sentence." 
 licences: 
   - "©"
-  - "PD"
-  - "T+C"
-  - "CC0" 
-  - "OGL"
-  - "ODbL"
-  - "CC-BY"
-  - "CC-BY-NC"
-  - "CC-BY-SA"
-  - "CC-BY-NC-SA"
 licence_description: "A human readable sentence about the license and any limitations."
 media: data
 formats: 
-  - CSV
-  - JSON
-  - XML
-  - RSS
-  - OPDS
-  - REST-API
-update_frequency: daily
-contact_information: "E-mail: [email@example.com](mailto:email@example.com) Twitter: [@example](https://twitter.com/example)"
-score: 5
-link: "http://data.culturehack.org/"
-
+  - HTML
+  - PDF
+update_frequency: unknown
+contact_information: "E-mail: [illicit-traffic@icom.museum](mailto:illicit-traffic@icom.museum)"
+score: 2
+link: "http://icom.museum/resources/red-lists-database/"
 ---
+The [Red Lists](http://icom.museum/resources/red-lists-database/) classify the endangered categories of archaeological objects or works of art in the most vulnerable areas of the world, in order to prevent them from being sold or illegally exported.
 
+Red Lists are NOT a list of actual stolen objects but use examples from legitimate collections to help people _'identify cultural goods protected by legislation and most vulnerable to illicit traffic.'_
+
+Objects are searchable by material, type, region and period.
+
+PDFs of the Red Lists are also available to download.
 
 ## Used In Anger
 
@@ -45,10 +32,7 @@ This section is for detailing any prototypes made with this data. We haven't fou
 
 ## Technical Details
 
-```
 This section is the technical stuff: for a developer audience. Feels like a readme
-```
-<!-- Comment -->
 
 ## The Data / Librarian / Metadata / Database bit
 

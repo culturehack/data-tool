@@ -82,6 +82,10 @@ helpers do
       "Creative Commons Attribution Share-Alike"
     when "CC-BY-NC-SA"
       "Creative Commons Attribution Non-Commercial Share-Alike"
+    when "ODbL"
+      "Open Data Commons Open Database License"
+    when "OGL"
+      "Open Government License"
     else
       licence_code
     end

@@ -11,16 +11,18 @@ categories:
   - History
 size: Medium
 size_description: "The size and content of the database in human readable sentence."  
-
 licences: 
+  - "©"
   - "PD"
+  - "T+C"
   - "CC0" 
+  - "OGL"
+  - "ODbL"
   - "CC-BY"
   - "CC-BY-NC"
   - "CC-BY-SA"
   - "CC-BY-NC-SA"
 licence_description: "A human readable sentence about the license and any limitations."
-
 media: data
 formats: 
   - CSV
@@ -30,11 +32,8 @@ formats:
   - OPDS
   - REST-API
 update_frequency: daily
-
 contact_information: "E-mail: [email@example.com](mailto:email@example.com) Twitter: [@example](https://twitter.com/example)"
-
 score: 5
-
 link: "http://data.culturehack.org/"
 ---
 
@@ -50,7 +49,7 @@ It is written in [Markdown](http://daringfireball.net/projects/markdown/), which
 
 ## Used In Anger
 
-This section is for detailing any prototypes made with this set.
+This section is for detailing any prototypes made with this set. We haven't found any examples yet: let us know if you've made something.
 
 ## Technical Details
 
