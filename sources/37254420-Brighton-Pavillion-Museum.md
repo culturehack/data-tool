@@ -14,7 +14,7 @@ media: [data, images]
 formats: 
   - CSV
 update_frequency: unknown
-contact_information: "E-mail: [email@example.com](mailto:email@example.com) Twitter: [@example](https://twitter.com/example)"
+contact_information: "[Via Comment on Site](http://rpmcollections.wordpress.com/2012/07/20/open-data-from-our-collections/) or Twitter [@BrightonMuseums](https://twitter.com/BrightonMuseums)"
 score: 4
 link: "http://rpmcollections.wordpress.com/2012/07/20/open-data-from-our-collections/"
 ---

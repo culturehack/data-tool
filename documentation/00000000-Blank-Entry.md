@@ -10,7 +10,7 @@ categories:
   - Media
   - History
 size: Medium
-size_description: "The size and content of the database in human readable sentence." 
+size_description: "The size and content of the database in human readable sentence. Small <10k, Huge >1m" 
 licences: 
   - "©"
   - "PD"
