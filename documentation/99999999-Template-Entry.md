@@ -120,12 +120,10 @@ With a plain text description of what it contains
 
 ## License details
 
-* CC0 - [Creative Commons Zero](http://creativecommons.org/about/cc0)
-* PD - [Public Domain](http://creativecommons.org/about/pdm)
-* CC-BY - [Creative Commons Attribution](http://creativecommons.org/licenses/by/3.0/)
-* CC-BY-NC - [Creative Commons Attribution Non-Commercial](http://creativecommons.org/licenses/by-nc/3.0/)
-* CC-BY-SA - [Creative Commons Attribution Share-Alike](http://creativecommons.org/licenses/by-sa/3.0/)
-* CC-BY-NC-SA - [Creative Commons Attribution Non-Commercial Share-Alike](http://creativecommons.org/licenses/by-nc-sa/3.0/)
+See <https://github.com/culturehack/data-tool/blob/master/documentation/reference-licenses.csv>
+
+
+
 
 ## Formats
 
