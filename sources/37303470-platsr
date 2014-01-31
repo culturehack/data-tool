@@ -1,0 +1,26 @@
+---
+title: Platsr
+publisher: Swedish National Heritage Board / Riksantikvarieämbetet
+categories: 
+  - History
+size: Small
+licences: 
+  - "T+C"
+formats: 
+  - JSON
+  - REST-API
+contact_information: "E-mail: [platsr@raa.se](mailto:platsr@raa.se)"
+link: "http://www.platsr.nu/platsrs-api/"
+
+---
+
+[Platsr](http://www.platsr.se/) is a Swedish web site and community focusing on user-generated storytelling, where users can share their own stories and memories connected to places in Sweden. The service is used both by professional users (museums, institutions) and public users. Most of the stories are in Swedish.
+
+Through the API you you can access the user-generated content: stories, images, soundclips, videos, links.
+
+## Technical Details
+
+[API documentation in Swedish](http://www.platsr.nu/platsrs-api/)
+
+## The Data / Librarian / Metadata / Database bit
+
