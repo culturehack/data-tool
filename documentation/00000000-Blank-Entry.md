@@ -50,12 +50,5 @@ This section is the technical stuff: for a developer audience. Feels like a read
 ```
 <!-- Comment -->
 
-## The Data / Librarian / Metadata / Database bit
-
-* CC0 - [Creative Commons Zero](http://creativecommons.org/about/cc0)
-* PD - [Public Domain](http://creativecommons.org/about/pdm)
-* CC-BY - [Creative Commons Attribution](http://creativecommons.org/licenses/by/3.0/)
-* CC-BY-NC - [Creative Commons Attribution Non-Commercial](http://creativecommons.org/licenses/by-nc/3.0/)
-* CC-BY-SA - [Creative Commons Attribution Share-Alike](http://creativecommons.org/licenses/by-sa/3.0/)
-* CC-BY-NC-SA - [Creative Commons Attribution Non-Commercial Share-Alike](http://creativecommons.org/licenses/by-nc-sa/3.0/)
+Note (you can delete this) - If you want to see the various license options, sizes, score rating etc, have a look at <https://github.com/culturehack/data-tool/blob/master/documentation/99999999-Template-Entry.md>
 
