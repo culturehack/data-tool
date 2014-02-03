@@ -12,6 +12,7 @@ licence_description: "The core data of the database is licensed under CC0, effec
 media: data
 formats: 
   - XML
+  - RDF
 update_frequency: Daily
 contact_information: "You can contact the Music Brainz staff by e-mail at support@musicbrainz.org. See their [contact page](http://musicbrainz.org/doc/Contact_Us) for further details"
 link: "http://musicbrainz.org"
