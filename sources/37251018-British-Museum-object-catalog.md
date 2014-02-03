@@ -31,9 +31,9 @@ There is a [web interface to search the collection](http://www.britishmuseum.org
 
 ## Technical Details ##
 
-The data is modelled using the [CIDOC schema](http://www.cidoc-crm.org) in an RDF format, and there is a [SPARQL endpoint](http://collection.britishmuseum.org/sparql) available. This can be a little tricky to use if you’re used to REST interfaces or CSV files, but there are some example queries you can use.
+The data is modelled using the [CIDOC schema](http://www.cidoc-crm.org) in an RDF format, and there is a [SPARQL endpoint](http://collection.britishmuseum.org/sparql) available. This can be a little tricky to use if you’re used to REST interfaces or CSV files, but there are some example queries you can use and an example AngularJS front end at http://collection.britishmuseum.org/angularsparqldemo/ with the Angular and Django source available at stash.researchspace.org/scm/an/angularsparqldemo.git.
 
-According to the [help page](http://collection.britishmuseum.org/help.html), the SPARQL endpoints can be called to return XML or JSON representations
+As per the [help page](http://collection.britishmuseum.org/help.html), the SPARQL endpoint can be called to return XML or JSON representations from SELECT queries, and RDF/XML, Turtle and NTriple from CONSTRUCT queries.
 
 <http://collection.britishmuseum.org/sparql.xml?query=>   returns xml (in the browser this is a downloadable file)
 
