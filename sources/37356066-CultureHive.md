@@ -22,8 +22,18 @@ score: 5
 link: "http://culturehive.co.uk/api"
 ---
 
+# CultureHive #
+
 [CultureHive](http://culturehive.co.uk/) is a free resource to help people working in the cultural sector to discover and share examples of best practice in cultural marketing, fundraising, development and management.
 
 It features key case studies, toolkits, research, articles and more, covering performing arts, visual art, museums, heritage, fundraising, libraries and archives.
 
 The site was funded by [Arts Council England](http://www.artscouncil.org.uk/), created as part the Audience Focus programme, and is managed by the [Arts Marketing Association](http://www.a-m-a.co.uk).
+
+## The API ##
+
+You can search for resources by tag (such as 'digital' or 'segmentation'), and get more info about specific resources using their unique IDs. This includes metadata about each resource, a thumbnail image url and a url to the PDF file itself.
+
+There is an [API overview](http://culturehive.co.uk/api/) which provides details of how to access CultureHive resources via the API. 
+
+
