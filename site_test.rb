@@ -1,8 +1,8 @@
 # encoding: UTF-8
 ENV['RACK_ENV'] = 'test'
 
-require './site'
 require 'test/unit'
+require './site'
 require 'rack/test'
 
 class SiteTest < Test::Unit::TestCase
@@ -39,7 +39,7 @@ class SiteTest < Test::Unit::TestCase
   def test_source_json
     get '/dataset/37249992-Project-Gutenberg.json'
     assert last_response.ok?
-    assert_equal 'application/json;charset=utf-8', last_response.header['Content-Type']    
+    assert_equal 'application/json', last_response.header['Content-Type']    
   end
 
 
