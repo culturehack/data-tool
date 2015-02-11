@@ -2,10 +2,3 @@ language: ruby
 rvm:
 - 2.0.0
 script: bundle exec ruby site_test.rb
-deploy:
-  provider: heroku
-  api_key:
-    secure: DbuXP0BqIz30tnhvytHzLwmt7ItJ9KyySSdlGumbCeNDPdQy4e/X3o5C+xUghFAwFTC0Z16dHvyDePcWnmISiscgpIhGqVpnBxczheVuO6o0I5TcJJ0RtlHkirHCu3t1U7zJ5Ky+k+lhMHE+ldFo9L0w0f7xuqGvgfqrCNs78yE=
-  app: culture-hack-data
-  on:
-    repo: culturehack/data-tool
