@@ -4,13 +4,15 @@ publisher: Swedish National Heritage Board / Riksantikvarieämbetet
 categories: 
   - History
 size: Huge
-size_description: "More than 5 million database objects (as of January 2014)"  
+size_description: "More than 6.3 million database objects (as of May 2016)"  
 licences: 
   - "T+C"
   - "CC0" 
 licence_description: "All metadata is CC0. Metadata includes licensing information for the main record."
 formats: 
   - XML
+  - JSON
+  - RDF
   - REST-API
 contact_information: "E-mail: [ksamsok@raa.se](mailto:ksamsok@raa.se)"
 link: "http://www.ksamsok.se/in-english/"
@@ -18,7 +20,7 @@ link: "http://www.ksamsok.se/in-english/"
 
 Swedish Open Cultural Heritage (SOCH) is a metadata aggregator and web service for cultural heritage institutions in Sweden, and contains monuments, buildings, museum collections etc from the Paleolithic to the present day.
 
-SOCH contains over 5 million database objects from around 40 heritage institutions (as of January 2014). Only metadata is indexed – all objects link back to a permanent URI at the source institution with their full record.
+SOCH contains over 6.3 million database objects from around 50 heritage institutions (as of May 2016). Only metadata is indexed – all objects link back to a permanent URI at the source institution with their full record.
 
 ## Used In Anger ##
 
@@ -27,6 +29,8 @@ Examples can be found [here](http://www.ksamsok.se/goda-exempel/) (in Swedish).
 ## Technical Details ##
 
 [API documentation](http://www.ksamsok.se/in-english/api/)
+
+The API returns search results as XML, and object metadata records as RDF/XML or JSON-LD.
 
 Using the API requires an API key which can be obtained by e-mailing [ksamsok@raa.se](mailto:ksamsok@raa.se).
 
