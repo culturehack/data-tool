@@ -24,13 +24,15 @@ To create a new entry on GitHub:
 4. Fill out the information in your newly-minted text file. 
 > You can use one the existing sources as a guide, or have a look at the blank and template examples in  [documentation](https://github.com/culturehack/data-tool/tree/master/documentation)  
 > 
-> You can add metadata using the YAML 'frontmatter' format – but don’t worry about this if you don’t know what that means.
+> You can add metadata using the YAML 'frontmatter' format – but don’t worry about this if you don’t know what that means - just follow the structure in the example file!
 > 
 > If you can, describe your source in detail, in a way that would be useful for anyone thinking about building something using that dataset.
 > 
 > If you know of any examples of things made using your data set, add a link in your description.
 > 
 > The description uses the [Markdown syntax](http://daringfireball.net/projects/markdown/syntax) for text formatting.
+>
+> The Dataset Size, Licensing and Contact information sections at the bottom of each page are actually pulled in from the YAML frontmatter at the top of the file - you don't need to add them again.
 
 5. 'Commit' your new file when you're done (it's like saving), using the green button at the foot of the page below the editing area. 
 > Add a bit of description about the changes you're making. 
